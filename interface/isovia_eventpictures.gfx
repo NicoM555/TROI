@@ -1,0 +1,7 @@
+spriteTypes = { 
+	##Icon For: isovia.1
+	SpriteType = { 
+		name = "GFX_killers"
+		texturefile = "gfx/event_pictures/killers.dds"
+	}
+}

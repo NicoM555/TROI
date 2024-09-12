@@ -1,0 +1,9 @@
+on_actions = { 
+    on_startup = { 
+        effect = { 
+            ISV = { 
+                country_event = { id = isovia.1 days = 42 } # 12 febbraio 1936
+            } 
+        } 
+    } 
+}

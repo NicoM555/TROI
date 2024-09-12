@@ -1,0 +1,192 @@
+focus_tree = {
+	id = isovia-tree
+	continuous_focus_position = { x = -40 y = 1700 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ISV
+		}
+	}
+	#Ban the PFI
+	focus = {
+		id = ISV_ban_the_pfi
+		icon = GFX_goal_unknown
+		x = 6
+		y = 6
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISV_the_trial_of_the_murderers  }
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -1
+			}
+			add_stability = 0.2
+		}
+	}
+
+	#Elections!
+	focus = {
+		id = ISV_elections
+		icon = GFX_goal_unknown
+		x = 6
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISV_ban_the_pfi  }
+	}
+
+	#The evidence is not enough
+	focus = {
+		id = ISV_the_evidence_is_not_enough
+		icon = GFX_goal_unknown
+		x = 4
+		y = 4
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISV_find_the_killers  }
+		completion_reward = {
+			ISV = { country_event = ISV_noevidence.0 }
+			add_political_power = -50
+			add_stability = -0.25
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+		}
+	}
+
+	#Early elections
+	focus = {
+		id = ISV_early_elections
+		icon = GFX_goal_unknown
+		x = 4
+		y = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISV_the_evidence_is_not_enough  }
+		completion_reward = {
+			ISV = { country_event = ISV_earlyelections.0 }
+			add_political_power = 20
+		}
+	}
+
+	#Good morning president!
+	focus = {
+		id = ISV_goodmorningpresident
+		icon = GFX_goal_unknown
+		x = 4
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISV_early_elections  }
+		completion_reward = {
+			ISV = { country_event = ISV_president.0 }
+			add_political_power = 20
+			remove_ideas = ISV_state_murder
+		}
+	}
+
+	#We got the chicken
+	focus = {
+		id = ISV_we_got_the_chicken
+		icon = GFX_goal_unknown
+		x = 6
+		y = 4
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISV_find_the_killers  }
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+			add_political_power = 20
+			add_stability = 0.20
+		}
+	}
+
+	#The trial of the murderers
+	focus = {
+		id = ISV_the_trial_of_the_murderers
+		icon = GFX_goal_unknown
+		x = 6
+		y = 5
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISV_we_got_the_chicken  }
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.15
+			}
+		}
+	}
+
+	#Try to maintain order!
+	focus = {
+		id = ISV_trytomaintainorder
+		icon = GFX_goal_unknown
+		x = 5
+		y = 2
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISV_the_murder_of_the_century  }
+		completion_reward = {
+			add_political_power = -50
+			add_stability = 0.15
+		}
+	}
+
+	#Find the killers
+	focus = {
+		id = ISV_find_the_killers
+		icon = GFX_goal_unknown
+		x = 5
+		y = 3
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISV_trytomaintainorder  }
+		completion_reward = {
+			ISV = { country_event = ISV_killers.0 }
+		}
+	}
+
+	#The murder of the century
+	focus = {
+		id = ISV_the_murder_of_the_century
+		icon = GFX_goal_unknown
+		x = 5
+		y = 1
+		cost = 20
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			always = no
+		}
+	}
+
+}

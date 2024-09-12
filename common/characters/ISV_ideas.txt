@@ -1,0 +1,65 @@
+characters = {	emiliano_fiorentini = {
+		name = emiliano_fiorentini
+		portraits = {
+			army = {
+			small = "gfx/interface/ideas/ISV/wDeSicJm-1419.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = emiliano_fiorentini
+			allowed = {
+				original_tag = ISV
+			}
+			traits = {}
+		}
+	}
+	nicolas_durepos = {
+		name = nicolas_durepos
+		portraits = {
+			army = {
+			small = "gfx/interface/ideas/ISV/pLwjqnWd-1407.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nicolas_durepos
+			allowed = {
+				original_tag = ISV
+			}
+			traits = {}
+		}
+	}
+	franciscogonzalez = {
+		name = franciscogonzalez
+		portraits = {
+			army = {
+			small = "gfx/interface/ideas/ISV/nPHRGMqg-1406.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = franciscogonzalez
+			allowed = {
+				original_tag = ISV
+			}
+			traits = {}
+		}
+	}
+	alberto_pallavicino = {
+		name = alberto_pallavicino
+		portraits = {
+			army = {
+			small = "gfx/interface/ideas/ISV/eJcQIPVz-643687.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = alberto_pallavicino
+			allowed = {
+				original_tag = ISV
+			}
+			traits = {}
+		}
+	}
+}

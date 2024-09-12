@@ -1,0 +1,65 @@
+characters = {
+#Create country leader - Alessandro III di Bastione
+alessandro_iii_di_bastione = {
+	name = alessandro_iii_di_bastione
+	portraits = {
+		civilian = {
+			#Custom image for Alessandro III di Bastione
+			large = "/gfx/leaders/ISV/WVpZsQeh-719485.dds"
+		}
+	}
+	country_leader = {
+		expire = "1948.01.01"
+		ideology = oligarchism
+		traits = {  }
+	}
+}
+
+#Create country leader - Francesco La Grange 
+francesco_la_grange_ = {
+	name = francesco_la_grange_
+	portraits = {
+		civilian = {
+			#Custom image for Francesco La Grange 
+			large = "/gfx/leaders/ISV/noywTxDF-719481.dds"
+		}
+	}
+	country_leader = {
+		expire = "1965.1.1"
+		ideology = marxism
+		traits = {  }
+	}
+}
+
+#Create country leader - Emanuele Agreste
+emanuele_agreste = {
+	name = emanuele_agreste
+	portraits = {
+		civilian = {
+			#Custom image for Emanuele Agreste
+			large = "/gfx/leaders/ISV/zORlZqKF-719471.dds"
+		}
+	}
+	country_leader = {
+		expire = "1965.01.01"
+		ideology = fascism_ideology
+		traits = {  }
+	}
+}
+
+#Create country leader - Guglielmo Allard
+guglielmo_allard = {
+	name = guglielmo_allard
+	portraits = {
+		civilian = {
+			#Custom image for Guglielmo Allard
+			large = "/gfx/leaders/ISV/agRAXOmx-719462.dds"
+		}
+	}
+	country_leader = {
+		expire = "1972.01.01"
+		ideology = conservatism
+		traits = {  }
+	}
+}
+}

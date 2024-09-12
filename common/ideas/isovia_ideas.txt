@@ -1,0 +1,73 @@
+ideas = {
+	political_advisor = {
+		emiliano_fiorentini = {
+			allowed = {
+				tag = ISV
+			}
+			traits = {}
+			picture = "wDeSicJm-1419"
+		}
+		nicolas_durepos = {
+			allowed = {
+				tag = ISV
+			}
+			traits = {}
+			picture = "pLwjqnWd-1407"
+		}
+		franciscogonzalez = {
+			allowed = {
+				tag = ISV
+			}
+			traits = {}
+			picture = "nPHRGMqg-1406"
+		}
+		alberto_pallavicino = {
+			allowed = {
+				tag = ISV
+			}
+			traits = {}
+			picture = "eJcQIPVz-643687"
+		}
+	}
+	
+	tank_manufacturer = {
+	}
+
+	naval_manufacturer = {
+	}
+
+	aircraft_manufacturer = {
+	}
+
+	materiel_manufacturer = {
+	}
+
+	industrial_concern = {
+	}
+
+	theorist = {
+	}
+
+	army_chief = {
+	}
+
+	navy_chief = {
+	}
+
+	air_chief = {
+	}
+
+	high_command = {
+	}
+
+	country = {
+		ISV_state_murder = {
+			picture = "GFX_rebellion"
+			modifier = {
+				political_power_cost = 2
+				stability_factor = -0.60
+				consumer_goods_factor = 0.15
+			}
+		}
+	}
+}

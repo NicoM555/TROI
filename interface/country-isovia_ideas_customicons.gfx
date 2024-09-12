@@ -1,0 +1,31 @@
+spriteTypes = { 
+	##Icon For: Emiliano Fiorentini
+	SpriteType = { 
+		name = "wDeSicJm-1419"
+		texturefile = "gfx/interface/ideas/ISV/wDeSicJm-1419.dds"
+	}
+
+	##Icon For: Nicolas Durepos
+	SpriteType = { 
+		name = "pLwjqnWd-1407"
+		texturefile = "gfx/interface/ideas/ISV/pLwjqnWd-1407.dds"
+	}
+
+	##Icon For: Francisco González
+	SpriteType = { 
+		name = "nPHRGMqg-1406"
+		texturefile = "gfx/interface/ideas/ISV/nPHRGMqg-1406.dds"
+	}
+
+	##Icon For: Alberto Pallavicino
+	SpriteType = { 
+		name = "eJcQIPVz-643687"
+		texturefile = "gfx/interface/ideas/ISV/eJcQIPVz-643687.dds"
+	}
+
+	##Icon For: State Murder
+	SpriteType = { 
+		name = "GFX_rebellion"
+		texturefile = "gfx/interface/ideas/ISV/rebellion.dds"
+	}
+ }
